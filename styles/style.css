@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
+
 }
 
 .col-1 {
@@ -75,51 +76,56 @@ header {
 }
 
 header nav a {
-   color: #3d3d3d;
-   text-decoration: none;
-   margin-right: 36px;
+  color: #3d3d3d;
+  text-decoration: none;
+  margin-right: 36px;
 }
 
 header nav a:last-child {    
   margin-right: 0;
 }
 
- .header-logo-col {
+.header-logo-col {
   padding-top: 51px;
  }
 
- body {
+body {
   font-family: 'Open Sans', sans-serif;
 }
 
 .main-item {
-    width: 940px;
+    
     height: 678.6px;
     background-color: #f2f2f2;
     border: solid 1px #979797;
     margin-bottom: 50.4px;
+    
+    flex-direction: row;
    
-  
-}
-
-.main-item-container {
-  display: flex;
-  flex-direction: row;
-
 }
 
 .main-item-img {
   width: 252px;
   height: 395.4px;
   object-fit: contain;
-  margin-right: 88px;
-  margin-left: 60px;
+  padding-left: 60px;
+  padding-right: 88px;
   padding-top: 80px;
+  padding-bottom: 203.2px;
 }
 
-.main-item-heading {
-  width: 310.9px;
-  height: 49px;
+.column1 {
+  float: left;
+  width: 400px;
+}
+
+.column2 {
+  float: left;
+  width: 540px;
+  
+}
+
+h1 {
   font-family: OpenSans;
   font-size: 36px;
   font-weight: bold;
@@ -130,12 +136,11 @@ header nav a:last-child {
   text-align: left;
   color: #000000;
   padding-top: 76px;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
-.Well-equipped-for-sc {
-  width: 379px;
-  height: 96px;
+.main-item-description {
+  display: flex;
   font-family: OpenSans;
   font-size: 18px;
   font-weight: normal;
@@ -145,12 +150,12 @@ header nav a:last-child {
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-  flex-direction: column;
-
+  margin-bottom: 56px;
 }
-.Features {
-  width: 143px;
-  height: 33px;
+
+
+h2 {
+  
   font-family: OpenSans;
   font-size: 24px;
   font-weight: bold;
@@ -160,26 +165,27 @@ header nav a:last-child {
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-
-
+  margin-bottom: 13px;
 }
-.List {
-  font-family: OpenSans;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-  margin-bottom: 48px; 
+
+.features-description {
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 48px;
+    line-height: 150%;
 }
 
 .main-item-btn {
-  width: 100%;
+  width: 283.7px;
+  height: 59px;
   border: 1px solid #3d3d3d;
-  padding: 20px 0;
   text-align: center;
   background-color: #f2f2f2;
   color: #3d3d3d;
@@ -197,8 +203,6 @@ header nav a:last-child {
 }
  
 .popular {
-   width: 168px;
-   height: 33px;
    font-family: OpenSans;
    font-size: 24px;
    font-weight: bold;
@@ -212,36 +216,28 @@ header nav a:last-child {
    margin-bottom: 50px;
  }
 
-
 .card {
+ width:100%;
  display: flex;
- width: 220px;
- height: 220px;
+ padding-top: 15px;
+ padding-bottom: 26.6px;
+ padding-left: 52px;
+ padding-right: 56.7px;
  background-color: #d8d8d8;
  border: solid 1px #979797;
  flex-direction: column;
  border: 1px solid #979797;
  margin-bottom: 20px;
- 
- 
 }
 
 .card-img {
-    width: 111.3px;
-    height: 178.4px;
-    object-fit: contain;
-    background-color: #d8d8d8;
-    display: flex;
-    align-self: center;
-    margin-bottom: 26.6px;
-   padding-top: 15px;
- }
+  object-fit: contain;
+  background-color: #d8d8d8;
+  display: flex;
+  align-self: center;
+}
 
-
-
-.Herschelsupply {
-  width: 303px;
-  height: 33px;
+.herschelsupply {
   font-family: OpenSans;
   font-size: 24px;
   font-weight: bold;
@@ -256,84 +252,81 @@ header nav a:last-child {
   padding-top: 50px;
  }
 
- .vk {
-  width: 220px;
-  height: 63px;
+.vk {
+  width: 100%;
+  display: flex;
   object-fit: contain;
   background-color: #5f81a9;
-  display: flex;
   flex-direction: column;
-  margin-bottom: 20px; 
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 96px;
+  padding-right: 90px;
+  
 }
 
 .about-vk {
-width: 34px;
-height: 19px;
-object-fit: contain;
-display: flex;
-align-self: center;
-margin-bottom: 22px;
-padding-top: 22px;
-}
-
-.fb {
-  width: 220px;
-  height: 63px;
-  object-fit: contain;
-  background-color: #3a589c;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px; 
-}
-
-.about-fb {
-width: 13px;
-height: 27px;
-object-fit: contain;
-display: flex;
-align-self: center;
-margin-bottom: 18px;
-padding-top: 18px;
-}
-
-.tg {
-  width: 220px;
-  height: 63px;
-  object-fit: contain;
-  background-color: #419fd9;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px; 
-}
-
-.about-tg {
-width: 25px;
-height: 25px;
-object-fit: contain;
-display: flex;
-align-self: center;
-margin-bottom: 20px;
-padding-top: 18px;
-}
-
-.md {
-  width: 220px;
-  height: 63px;
-  object-fit: contain;
-  background-color: #00e272;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px; 
-}
-
-.about-md {
- width: 26px;
- height: 23px;
  object-fit: contain;
  display: flex;
  align-self: center;
- margin-bottom: 20px;
- padding-top: 20px;
+}
+
+.fb {
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+  background-color: #3a589c;
+  flex-direction: column;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 104px;
+  padding-right: 103px;
+  
+}
+
+.about-fb {
+ object-fit: contain;
+ display: flex;
+ align-self: center;
+}
+
+.tg {
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+  background-color: #419fd9;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 100px;
+  padding-right: 95px;
+  
+  
+}
+
+.about-tg {
+ object-fit: contain;
+ display: flex;
+ align-self: center;
+}
+
+.md {
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+  background-color: #00e272;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 94px;
+  
+}
+
+.about-md {
+ object-fit: contain;
+ display: flex;
+ align-self: center;
 }
 
 main{
@@ -341,16 +334,17 @@ main{
 }
 
 footer {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #3d3d3d;
-  padding: 40px 0;
+  padding-top:34px;
+  padding-bottom: 17px;
+
   color: #ffffff;
 }
 .footer-links {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .footer-links a {
   font-family: OpenSans;
@@ -368,7 +362,7 @@ footer {
   margin-right: 0;
 }
 
-.All{
+.all{
   font-family: OpenSans;
   font-size: 10px;
   font-weight: bold;
