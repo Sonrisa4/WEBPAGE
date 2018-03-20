@@ -102,7 +102,7 @@ body {
 
 .image {
    padding-top: 80px;
-   margin-bottom: 203.2px;
+   
 }
 
 .main-item-img {
@@ -190,6 +190,7 @@ ul li:before {
   width: 100%;
   display: flex;
   padding-top: 28px;
+  margin-bottom: 48.6px;
 }
 
 .main-item-btn {
